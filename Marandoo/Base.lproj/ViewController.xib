@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Penpal" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="cwW-d9-OmF" id="ccp-Pb-5SO"/>
+                <outlet property="textField" destination="q14-fR-QO1" id="zo3-5X-Ivd"/>
+                <outlet property="view" destination="bNG-iZ-sRn" id="oVr-2K-Yxw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bNG-iZ-sRn">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Zl-NW-e6g">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="1fS-CA-bJE"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" id="wN9-Vk-NsM">
+                            <textField key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="q14-fR-QO1">
+                                <rect key="frame" x="16" y="7" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="m66-SZ-vTs"/>
+                                </connections>
+                            </textField>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write something below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="cwW-d9-OmF">
+                    <rect key="frame" x="20" y="40" width="335" height="563"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cwW-d9-OmF" firstAttribute="top" secondItem="9Ud-sa-eNO" secondAttribute="top" constant="20" id="1hh-mK-Au9"/>
+                <constraint firstItem="8Zl-NW-e6g" firstAttribute="bottom" secondItem="9Ud-sa-eNO" secondAttribute="bottom" id="PLK-Ul-jAm"/>
+                <constraint firstItem="8Zl-NW-e6g" firstAttribute="trailing" secondItem="9Ud-sa-eNO" secondAttribute="trailing" id="V0z-Bx-1au"/>
+                <constraint firstItem="cwW-d9-OmF" firstAttribute="leading" secondItem="9Ud-sa-eNO" secondAttribute="leading" constant="20" id="Vgr-5L-gXT"/>
+                <constraint firstItem="8Zl-NW-e6g" firstAttribute="leading" secondItem="9Ud-sa-eNO" secondAttribute="leading" id="Yht-B4-XsT"/>
+                <constraint firstItem="8Zl-NW-e6g" firstAttribute="top" secondItem="cwW-d9-OmF" secondAttribute="bottom" constant="20" id="fCc-or-zDh"/>
+                <constraint firstItem="9Ud-sa-eNO" firstAttribute="trailing" secondItem="cwW-d9-OmF" secondAttribute="trailing" constant="20" id="sSh-xP-nse"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9Ud-sa-eNO"/>
+        </view>
+    </objects>
+</document>
